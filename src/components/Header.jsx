@@ -3,9 +3,6 @@ import {Link} from 'react-router-dom';
 export default function Header() {
     return(
         <>
-        <header>
-            <h1>Loja do Neném</h1>
-        </header>
         <nav>
             <ul>
                 <Link to="/">
@@ -20,5 +17,5 @@ export default function Header() {
             </ul>
         </nav>
         </>
-    )
+    );
 }
