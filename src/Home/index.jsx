@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from 'react-responsive-carousel';
-import React from "../Components/ListarProdutos";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import ListarProdutos from "../Components/ListarProdutos";
+
+
 
 export default function Home() {
     const [produtos, setProdutos] = useState([

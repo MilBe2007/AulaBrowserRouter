@@ -1,0 +1,70 @@
+.carrossel {
+    height: 40%;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #091757;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+  
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    background-color: #091757;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.listar-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  
+.produtos {
+    border: 1px solid #b5a5ce;
+    border-radius: 4px;
+    padding: 1px;
+    margin: 1px;
+    flex: 30%;
+    background-color: #fff;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.cabecalho{
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    color: #091757;
+    background-color: peachpuff;
+}
+
+.rodape{
+    text-align: center;
+    font-style: unset;
+    color: peachpuff;
+    background-color: #091757;
+    position: relative;
+    width: 100%;
+    display: flex;
+}

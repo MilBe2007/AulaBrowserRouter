@@ -1,7 +1,10 @@
-import React from "react";
-import React from "../Components/ListarProdutos";
+import { useState } from "react";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import ListarProdutos from "../Components/ListarProdutos";
 
-export default function Home() {
+
+export default function Oferta() {
     const [produtos, setProdutos] = useState([
         { id:1, nome:'Carrinho Rock', preco:'R$ 499,00', cor:'Grey Ice', marca:'Infanti', tamanho:'103 x 47 x 65 cm', indicação:'0-15 kg'},
         { id:2, nome:'Poltrona Amamentação Cláudia com Balanço', preco:'R$ 1.599,20', cor:'Cinza', marca:'Gariani', tamanho:'106cm x 72cm x 88cm', indicação:'Melhora a postura e reduz a tensão no corpo da mãe.'},
@@ -14,4 +17,15 @@ export default function Home() {
         { id:9, nome:'Conjunto Balls', preco:'R$ 99,90', cor:'Cru', marca:'Keko Baby', tamanho:'1', indicação:'1 - 3 anos'},
         { id:10, nome:'Vestido Pássaros e Flores', preco:'R$ 103,90', cor:'Rosa', marca:'Pulla Bulla', tamanho:'4', indicação:'4 - 12 anos'}
     ]);
+    
+    return(
+        <>
+        <div className="cabecalho">
+        <h1>Ofertas</h1>
+        <Header></Header>
+        </div>
+
+        <ListarProdutos produto={produtos} />
+        </>
+    )
 }
